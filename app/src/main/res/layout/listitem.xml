@@ -1,0 +1,55 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/holo_orange_light">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/StuffImg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/StuffName"
+        android:layout_toEndOf="@+id/StuffImg"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/StuffImg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/StuffTitle"
+        android:layout_below="@+id/StuffName"
+        android:layout_alignLeft="@+id/StuffName"
+        android:layout_alignStart="@+id/StuffName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/StuffStatus"
+        android:layout_above="@+id/StuffTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/onlineOroffline"
+        android:layout_alignTop="@+id/StuffTitle"
+        android:layout_alignLeft="@+id/StuffStatus"
+        android:layout_alignStart="@+id/StuffStatus"
+        android:layout_marginLeft="26dp" />
+
+</RelativeLayout>
